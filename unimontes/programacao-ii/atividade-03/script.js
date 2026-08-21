@@ -5,6 +5,11 @@ function postLogin(){
     event.preventDefault();
     email = document.getElementById("email").value
     password = document.getElementById("password").value
+    if (email == "" || password == "") {
+        alert("Valores em branco não são permitidos.")
+        document.getElementById("login_form").reset()
+        return
+    }
 
     if (email == EMAIL && password == PASSWORD) {
         document.getElementById("output_div").className = "success-message"
