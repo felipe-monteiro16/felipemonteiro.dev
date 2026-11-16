@@ -10,7 +10,6 @@
     --on-accent: #ffffff;
     --border: #dcdfd9;
     --border-strong: #c3c8c1;
-    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
     --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
@@ -69,11 +68,11 @@ a:focus-visible {
 }
 
 h1 {
-    font-family: var(--serif);
+    font-family: var(--sans);
     font-size: 40px;
     font-weight: 600;
     line-height: 1.1;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.025em;
     margin: 0;
 }
 
@@ -133,8 +132,9 @@ h1 {
 }
 
 h2 {
-    font-family: var(--serif);
-    font-size: 22px;
+    font-family: var(--sans);
+    font-size: 20px;
+    letter-spacing: -0.01em;
     font-weight: 600;
     margin: 0 0 16px;
 }
